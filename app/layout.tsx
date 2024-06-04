@@ -27,6 +27,9 @@ export default async function RootLayout({
   const userSongs = await getSongsByUserId();
   return (
     <html lang="en">
+      <head>
+      <link rel="icon" type="image/jpeg" href="/noteflow.jpeg" />
+      </head>
       <body className={font.className}>
         <SupabaseProvider>
           <ToasterProvider />
