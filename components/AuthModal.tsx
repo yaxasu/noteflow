@@ -19,6 +19,7 @@ const AuthModal = () => {
     const router = useRouter()
     const {session} = useSessionContext()
     const {onClose, isOpen} = useAuthModal()
+    
 
     useEffect(() => {
         if (session){
@@ -35,8 +36,8 @@ const AuthModal = () => {
 
     return (
         <Modal
-            title="Welcome Back"
-            description="Login to your acccount"
+            title="Welcome"
+            description=""
             isOpen={isOpen}
             onChange={onChange}
         >
