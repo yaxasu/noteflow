@@ -43,6 +43,12 @@ export default async function Home() {
               image="/images/liked.jpg"
               name="Liked Songs"
               href="liked"
+              className="
+                borderborder-white
+                bg-white
+                text-black
+                hover:bg-white
+              "
             />
           </div>
         </div>

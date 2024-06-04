@@ -3,14 +3,21 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { FaPlay } from "react-icons/fa";
+import { twMerge } from "tailwind-merge";
 
 interface ListItemProps {
   image: string;
   name: string;
   href: string;
+  className?: string;
 }
 
-const ListItem: React.FC<ListItemProps> = ({ image, name, href }) => {
+const ListItem: React.FC<ListItemProps> = ({
+    image,
+    name,
+    href,
+    className
+}) => {
   const router = useRouter();
   const onClick = () => {
     // Add auth before push
@@ -19,7 +26,7 @@ const ListItem: React.FC<ListItemProps> = ({ image, name, href }) => {
   return (
     <button
         onClick={onClick}
-        className="
+        className={twMerge(`
             relative
             group
             flex
@@ -31,7 +38,7 @@ const ListItem: React.FC<ListItemProps> = ({ image, name, href }) => {
             hover:bg-neutral-100/20
             transition
             pr-4
-        "
+        `, className)}
     >
         <div className="
             relative
