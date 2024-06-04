@@ -13,7 +13,7 @@ import Player from "@/components/Player";
 const font = Figtree({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "NoteFlow",
+  title: "NoteFloww",
   description: "Spotify clone made with supabase",
 };
 
