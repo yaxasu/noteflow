@@ -8,7 +8,7 @@ import { Song } from "@/types";
 
 interface MediaItemProps {
     data: Song;
-    onClick: (id: string) => void;
+    onClick?: (id: string) => void;
 }
 
 
@@ -33,7 +33,7 @@ const MediaItem: React.FC<MediaItemProps>= ({
             items-center
             gap-x-3
             cursor-pointer
-            hover: bg-neutral-800/50
+            hover:bg-neutral-800/50
             w-full
             p-2
             rounded-md
