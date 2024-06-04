@@ -33,7 +33,7 @@ const Library: React.FC<LibraryProps> = ({
     }
 
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col h-full'>
         <div className='
             flex
             items-center

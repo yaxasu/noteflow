@@ -38,12 +38,12 @@ const AuthModal = () => {
             title="Welcome Back"
             description="Login to your acccount"
             isOpen={isOpen}
-            onChange={() => {onChange}}
+            onChange={onChange}
         >
             <Auth
                 theme='dark'
                 magicLink
-                providers={["github"]}
+                providers={[]}
                 supabaseClient={supabaseClient}
                 appearance={{
                     theme: ThemeSupa,
