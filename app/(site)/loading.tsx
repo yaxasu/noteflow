@@ -12,7 +12,7 @@ const Loading = () => {
         items-center
         justify-center
     ">
-        <BounceLoader color='#22c55e' size={40}/>
+        <BounceLoader color='#fff' size={40}/>
     </Box>
   )
 }

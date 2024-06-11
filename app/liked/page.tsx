@@ -31,12 +31,14 @@ const Liked = async() => {
                         w-32
                         lg:h-44
                         lg:w-44
+                        rounded-xl
                     ">
                         <Image
                             fill
                             alt="Playlist"
                             src="/images/liked.jpg"
-                            className="object-cover"
+                            className="object-cover rounded-xl"
+                            
                         />
                     </div>
                     <div className="
@@ -46,9 +48,6 @@ const Liked = async() => {
                         mt-4
                         md:mt-0
                     ">
-                        <p className="hidden md:block font-semibold text-sm">
-                            Playlist
-                        </p>
                         <h1 className="
                             text-white
                             text-4xl
